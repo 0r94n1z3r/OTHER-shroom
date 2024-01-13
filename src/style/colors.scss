@@ -1,0 +1,9 @@
+body{
+    --c-default: #fff;
+    --c-text: #000;
+
+    &[dead]{
+        --c-default: #000;
+        --c-text: #fff;
+    }
+}

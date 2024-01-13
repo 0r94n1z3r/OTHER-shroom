@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    // transform-style: preserve-3d;
+    // perspective: 300px;
+    transition: .3s;
+    transition-property: background, color, border-color;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+
+    background: var(--c-default);
+    color: var(--c-text);
+
+    --brd: 3px solid var(--c-text);
+    --anim-bounce: cubic-bezier(.3,.2,.3,1.4);
+
+    &[overdose]{
+        --c-default: #000;
+        --c-text: #fff;
+        --brd: 3px solid var(--c-text);
+    }
+
+    ::-webkit-scrollbar{
+        width: 7px;
+        
+        &-thumb{
+            border-radius: 7px;
+            background: var(--c-text);
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
